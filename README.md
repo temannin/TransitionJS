@@ -1,7 +1,7 @@
 # TransitionJS
-#### Create 'slide-like' timed transitions for your business or home setup.
+#### Create 'slide-like', timed transitions, for your business or home setup.
 
-Have an extra monitor? Need to display changing information to your customers on-site? TransitionJS makes it easy to create HTML documents that cycle through the content you want to display.
+Have an extra monitor? Need to display changing information to your customers on-site or just the weather in your easily? TransitionJS makes it easy to create HTML documents that cycle through the content you want to display.
 
 ### Getting started
 1. Create HTML Document
