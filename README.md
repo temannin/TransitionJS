@@ -48,4 +48,4 @@ TransitionJS makes it easy to create HTML documents that cycle through the conte
 
 ```
 3. Done!
-![alt text](https://i.imgur.com/rNLeI9i.gif)
+<img src="https://i.imgur.com/rNLeI9i.gif" />
