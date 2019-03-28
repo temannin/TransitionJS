@@ -26,3 +26,20 @@ Have an extra monitor? Need to display changing information to your customers on
   </script>
 </html>
 ```
+2. Style and design each slide how you want.
+```css
+.slide-1 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: red;
+}
+
+.slide-2 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: purple;
+}
+```
+3. Done!
