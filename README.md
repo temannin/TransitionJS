@@ -1,4 +1,5 @@
 # TransitionJS
+![](https://img.shields.io/maintenance/yes/2019.svg?style=for-the-badge)
 #### Create 'slide-like', timed transitions, for your business or home setup.
 
 Have an extra monitor? Need to display changing information to your customers on-site or just the weather in your easily? TransitionJS makes it easy to create HTML documents that cycle through the content you want to display.
