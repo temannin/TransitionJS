@@ -28,7 +28,8 @@ TransitionJS makes it easy to create HTML documents that cycle through the conte
   <script src="./jquery-fadeOnly.js"></script>
 
   <!-- Import TransitionJS file -->
-  <script src="./transition.js"></script>
+  <!-- If you want a 150% performance boost (or about 1KB less :) ), use the transition.min.js file instead. -->
+  <script src="./transition.js"></script> 
 
   <!-- Instantiate Presentation -->
   <script>
