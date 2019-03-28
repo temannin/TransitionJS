@@ -1,6 +1,5 @@
 class Presentation {
-  constructor(inter) {
-    this.slideInterval = inter;
+  constructor() {
     this.slides = Array.prototype.slice.call(
       document.getElementsByTagName("slide")
     );
@@ -15,7 +14,8 @@ class Presentation {
 
   hideAllElements() {
     this.slides.forEach(slide => {
-      slide.style.display = "none";
+      //   slide.style.display = "none";
+      //   $(slide).hide();
     });
   }
 
@@ -40,26 +40,53 @@ class Presentation {
     return btn;
   }
 
-  start() {
+  start(obj) {
+    var elem = document.documentElement;
+    if (elem.requestFullscreen) {
+      elem.requestFullscreen();
+    } else if (elem.mozRequestFullScreen) {
+      /* Firefox */
+      elem.mozRequestFullScreen();
+    } else if (elem.webkitRequestFullscreen) {
+      /* Chrome, Safari and Opera */
+      elem.webkitRequestFullscreen();
+    } else if (elem.msRequestFullscreen) {
+      /* IE/Edge */
+      elem.msRequestFullscreen();
+    }
     this.button.parentNode.removeChild(this.button);
     this.slideNumber = 0;
     var presentation = this;
     setInterval(function() {
-      presentation.cycleSlides();
-    }, presentation.slideInterval);
+      presentation.cycleSlides(obj);
+    }, obj.interval);
   }
 
-  cycleSlides() {
-    if (this.slideNumber - 1 >= 0) {
-      this.slides[this.slideNumber - 1].style.display = "none";
+  cycleSlides(obj) {
+    if (!obj.fade) {
+      if (this.slideNumber - 1 >= 0) {
+        this.slides[this.slideNumber - 1].style.display = "none";
+      } else {
+        this.slides[this.slides.length - 1].style.display = "none";
+      }
+      this.slides[this.slideNumber].style.display = "block";
+      if (this.slideNumber + 1 < this.slides.length) {
+        this.slideNumber++;
+      } else {
+        this.slideNumber = 0;
+      }
     } else {
-      this.slides[this.slides.length - 1].style.display = "none";
-    }
-    this.slides[this.slideNumber].style.display = "block";
-    if (this.slideNumber + 1 < this.slides.length) {
-      this.slideNumber++;
-    } else {
-      this.slideNumber = 0;
+      if (this.slideNumber - 1 >= 0) {
+        $(this.slides[this.slideNumber - 1]).fadeOut(obj.fadeInterval);
+      } else {
+        $(this.slides[this.slides.length - 1]).fadeOut(obj.fadeInterval);
+      }
+      $(this.slides[this.slideNumber]).fadeIn(obj.fadeInterval);
+      if (this.slideNumber + 1 < this.slides.length) {
+        this.slideNumber++;
+      } else {
+        this.slideNumber = 0;
+      }
     }
   }
 }
