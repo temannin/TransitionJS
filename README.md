@@ -43,3 +43,4 @@ Have an extra monitor? Need to display changing information to your customers on
 }
 ```
 3. Done!
+![alt text](https://i.imgur.com/lu8HOPV.gif "Logo Title Text 1")
