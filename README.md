@@ -23,19 +23,23 @@ TransitionJS makes it easy to create HTML documents that cycle through the conte
     <slide class="slide-2">Test2</slide>
   </body>
 
+  <!-- Import Reduced Size Jquery For Fade Effects -->
+  <!-- If not using fade effects, this line is NOT needed -->
+  <script src="./jquery-fadeOnly.js"></script>
+
   <!-- Import TransitionJS file -->
   <script src="./transition.js"></script>
+
+  <!-- Instantiate Presentation -->
   <script>
     // Initialize Presentation
-    const show = new Presentation(3000); // 3000 is the transition interval in ms.
-
-    // The below code is somewhat optional, for most browsers, full screen mode needs to be accessed via 'user gesture'.
-    // The important part to TransitionJS is that start() is called.
+    const show = new Presentation(); // 3000 is the transition interval in ms.
     show.createStartButton().addEventListener("click", function() {
-      show.start();
+      show.start({ interval: 1000, fade: true, fadeInterval: 200 });
     });
   </script>
 </html>
+
 ```
 
 2. Style and design each slide how you want.
