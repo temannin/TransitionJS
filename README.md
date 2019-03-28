@@ -32,7 +32,6 @@ TransitionJS makes it easy to create HTML documents that cycle through the conte
 
   <!-- Instantiate Presentation -->
   <script>
-    // Initialize Presentation
     const show = new Presentation(); // 3000 is the transition interval in ms.
     show.createStartButton().addEventListener("click", function() {
       show.start({ interval: 1000, fade: true, fadeInterval: 200 });
