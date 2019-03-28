@@ -1,12 +1,15 @@
 ![](https://i.imgur.com/iRrJ3hi.png)
 ![](https://img.shields.io/maintenance/yes/2019.svg?style=for-the-badge) ![](https://img.shields.io/github/size/temannin/TransitionJS/transition.min.js.svg?style=for-the-badge) ![](https://img.shields.io/badge/license-MIT-blue.svg?style=for-the-badge)
+
 #### Create 'slide-like', timed transitions, for your business or home setup.
 
 Have an extra monitor you're not using? Want to display changing information to you or your customers on it?
 TransitionJS makes it easy to create HTML documents that cycle through the content you want to display.
 
 ### Getting started
+
 1. Create HTML Document
+
 ```html
 <html>
   <head>
@@ -21,14 +24,22 @@ TransitionJS makes it easy to create HTML documents that cycle through the conte
   </body>
 
   <!-- Import TransitionJS file -->
-  <script src="./transition.min.js"></script>
+  <script src="./transition.js"></script>
   <script>
     // Initialize Presentation
-    const presentation = new Presentation(3000); // 3000 is the transition interval in ms.
+    const show = new Presentation(3000); // 3000 is the transition interval in ms.
+
+    // The below code is somewhat optional, for most browsers, full screen mode needs to be accessed via 'user gesture'.
+    // The important part to TransitionJS is that start() is called.
+    show.createStartButton().addEventListener("click", function() {
+      show.start();
+    });
   </script>
 </html>
 ```
+
 2. Style and design each slide how you want.
+
 ```css
 .slide-1 {
   position: absolute;
@@ -45,7 +56,7 @@ TransitionJS makes it easy to create HTML documents that cycle through the conte
   background-color: purple;
   font-size: 80px;
 }
-
 ```
+
 3. Done!
-<img src="https://i.imgur.com/rNLeI9i.gif" />
+   <img src="https://i.imgur.com/rNLeI9i.gif" />

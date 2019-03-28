@@ -11,9 +11,12 @@
   </body>
 
   <!-- Import TransitionJS file -->
-  <script src="./transition.min.js"></script>
+  <script src="./transition.js"></script>
   <script>
     // Initialize Presentation
-    const presentation = new Presentation(3000); // 3000 is the transition interval in ms.
+    const show = new Presentation(3000); // 3000 is the transition interval in ms.
+    show.createStartButton().addEventListener("click", function() {
+      show.start();
+    });
   </script>
 </html>
