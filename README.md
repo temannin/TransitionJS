@@ -1,5 +1,5 @@
 # TransitionJS
-![](https://img.shields.io/maintenance/yes/2019.svg?style=for-the-badge) ![](https://img.shields.io/github/size/temannin/TransitionJS/transition.min.js.svg?style=for-the-badge) ![](https://img.shields.io/badge/license-MIT-black.svg?style=for-the-badge)
+![](https://img.shields.io/maintenance/yes/2019.svg?style=for-the-badge) ![](https://img.shields.io/github/size/temannin/TransitionJS/transition.min.js.svg?style=for-the-badge) ![](https://img.shields.io/badge/license-MIT-blue.svg?style=for-the-badge)
 #### Create 'slide-like', timed transitions, for your business or home setup.
 
 Have an extra monitor you're not using? Want to display changing information to you or your customers on it?
