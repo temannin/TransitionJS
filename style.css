@@ -3,6 +3,7 @@
   width: 100%;
   height: 100%;
   background-color: red;
+  font-size: 40px;
 }
 
 .slide-2 {
@@ -10,4 +11,5 @@
   width: 100%;
   height: 100%;
   background-color: purple;
+  font-size: 80px;
 }
