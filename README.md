@@ -19,7 +19,7 @@ Have an extra monitor? Need to display changing information to your customers on
   </body>
 
   <!-- Import TransitionJS file -->
-  <script src="./transition.js"></script>
+  <script src="https://raw.githubusercontent.com/temannin/TransitionJS/master/transition.min.js"></script>
   <script>
     // Initialize Presentation
     const presentation = new Presentation(3000); // 3000 is the transition interval in ms.
