@@ -33,6 +33,7 @@ Have an extra monitor? Need to display changing information to your customers on
   width: 100%;
   height: 100%;
   background-color: red;
+  font-size: 40px;
 }
 
 .slide-2 {
@@ -40,7 +41,9 @@ Have an extra monitor? Need to display changing information to your customers on
   width: 100%;
   height: 100%;
   background-color: purple;
+  font-size: 80px;
 }
+
 ```
 3. Done!
-![alt text](https://i.imgur.com/lu8HOPV.gif "Logo Title Text 1")
+![alt text](https://i.imgur.com/2Izbwys.gif "Logo Title Text 1")
